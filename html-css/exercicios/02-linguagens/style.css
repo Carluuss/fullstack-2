@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    background: linear-gradient(to bottom, #a49add, #57ACC2);
+}
+h1{
+    color: white;
+}
+iframe{
+    box-shadow:  5px 1px 5px 1px rgba(0, 0, 0, 0.192);
+    margin: 10px;
+    height: 300px;
+    width: 500px;
+   
+}
+body > ul{
+    align-self: flex-start;
+}
+img{
+    box-shadow:  5px 1px 5px 1px rgba(0, 0, 0, 0.192);
+}
+
+button{
+    transition: 0.8s;
+}
+button:hover{
+    
+    background-color: red;
+}

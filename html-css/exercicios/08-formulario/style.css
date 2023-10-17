@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+fieldset{
+    box-shadow: rgba(255, 255, 255, 0.479) 1px 1px 10px 3px;
+    width: 50%;
+    background-color: black;
+   
+}
+
+
+
+legend{
+    color: red;
+    margin: 10px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+}
+
+ input:invalid {
+    color: red;
+    animation: invalidInput .5s forwards;
+    position: relative;
+ }
+
+@keyframes invalidInput{
+
+}
+
+input, select{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 97%;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    box-shadow: rgba(255, 255, 255, 0.479) 1px 1px 10px 3px;
+    padding: 5px 0px 0px 10px;
+    border: none;
+    transition: 0.5s;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 5px 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+   
+
+input[type=submit]{
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(201, 20, 20);
+    color: white;
+    
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+input[type=text]{
+    padding: 0px 0px 0px 10px;
+}
+
+input:focus{
+    background-color: rgb(243, 167, 167);
+}
+
+textarea{
+    margin: 0px 10px 10px 10px;
+    width: 97%;
+    resize: none;
+    padding: 5px 0px 0px 10px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.719);
+    transition: 0.9s;
+}
+
+textarea:focus{
+    background-color: rgb(243, 167, 167);
+    height: 120px;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+padding: 10px;
+}
+
+h1{
+    font-family: cursive;
+    padding: 10px;
+    color: rgb(33, 128, 115);
+    animation: animacao 2s  infinite;
+    font-size: 27px;
+    text-align: center;
+    
+}
+
+li{
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    border-bottom: black solid 1px;
+    margin: 15px 20px 5px 20px;
+    
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+p:hover{
+    font-weight: bold;
+    font-size: large;
+}
+
+div{
+    background-color: rgb(219, 155, 72);
+    border: rgb(0, 0, 0) solid 5px;
+    padding: 15px;
+}
+
+#borda{
+    border: black solid 2px;
+    border-radius: 20px;
+    width: 18em;
+    height: 4em;
+    padding: 0px 0px 0px 10px;
+    margin-top: 0;
+}
+
+
+
+@keyframes animacao {
+    0% {
+        transform: rotateZ(0deg);
+        
+;
+    }
+   
+    10%{
+        transform: skew(-12deg, -8deg);
+        
+    }
+    50% {
+        transform: skew(12deg, 8deg);
+        
+       
+    }
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+:root {
+    --PrimaryColor: #E15813;
+    --SecondaryColor: #26E0D3;
+    --TerciariColor: #43A19A;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+header {
+    width: 100vw;
+
+}
+
+header nav{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--PrimaryColor);
+    align-items: center;
+}
+
+.Menu a{
+    font-family: 'Young Serif', serif;
+}
+
+.Menu a span {
+    color: var(--SecondaryColor);
+    font-size: 30px;
+}
+
+.extraMenu a{
+    padding-left: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: var(--SecondaryColor);
+}
+
+header > div {
+    background-color: var(--TerciariColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9em 0em;
+}
+
+header > div > img {
+    position: absolute;
+    top: 108px;
+}
+
+body{
+    background-color: var(--SecondaryColor);
+}
+
+main{
+    padding: 3vh;
+}
+
+.card-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 11%;
+}
+
+.card-img-top{
+    border-radius: 100%;
+    width: 12vh;
+    height: 12vh;
+}
+.card{
+    background-color: var(--SecondaryColor);
+    border: none;
+    display: flex;
+    justify-self: center;
+}
+
+.card-title{
+    text-align: center;
+}

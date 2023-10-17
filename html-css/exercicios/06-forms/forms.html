@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form action="../05-tabela/tabela.html" method="get">
+        
+            <fieldset>
+                <table>
+                    <legend>Dados pessoais</legend>
+                    Nome: <input type="text" maxlength="15">
+                    email: <input type="text">
+                    senha: <input type="password">
+                                
+                                <br>gênero:
+                                <br><input type="radio" name="gênero" value="M">Masculino
+                                <br><input type="radio" name="gênero" value="F">Feminino
+                                <br><input type="radio" name="gênero" value="O">Outro
+                    
+                            
+                                
+                           
+                                <p>Qual idioma você já estudou?</p>
+                                <br><input type="checkbox" value="português">Português
+                                <br><input type="checkbox" value="inglês">Inglês
+                                <br><input type="checkbox" value="espanhol">Espanhol
+                                <br>Data de nascimento: <input type="date">
+                                <p>Escolaridade:</p>
+                                <select>
+                    <option value="EF1">Ensino Fundamental 1</option>
+                    <option value="EF2">Ensino Fundamental 2</option>
+                    <option value="EM">Ensino Médio</option>
+                    <option value="ES">Esino Superior</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Endereço</legend>
+                                Rua:<input type="text">
+                                Cep:<input type="number" maxlength="8" min="0">
+                                Número da casa:<input type="number" maxlength="3" min="0">
+                                Referência: <input type="text">
+                                <input type="submit">
+                </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

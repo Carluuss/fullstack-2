@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://i.ytimg.com/vi/VYEO4ZI88h8/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+nav a {
+  padding-left: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.submenu {
+  float: left;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.submenu .sub-menuBtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.sub-menu-conteudo {
+  display: none;
+  position: absolute;
+  left: 1;
+
+  width: 0%;
+  height: auto;
+  z-index: 1;
+}
+
+
+
+.submenu:hover .sub-menu-conteudo {
+  display: block;
+}
+
+header {
+  background: linear-gradient(
+    to top,
+    rgba(85, 162, 240, 0.733),
+    rgba(58, 80, 102, 0.467)
+  );
+  text-align: center;
+  width: 99vw;
+  padding: 20px;
+}
+
+header nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header h1 {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid white;
+  border-bottom: none;
+  border-top: none;
+  width: 70%;
+
+  padding: 10px;
+  background-color: rgba(10, 68, 134, 0.692);
+}
+
+#logo {
+  align-self: center;
+  width: 20%;
+  border: rgb(63, 63, 245) solid 1px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.555);
+  border: rgb(111, 234, 250) solid 1px;
+  border-radius: 50px;
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  padding: 10px;
+}
+
+.box-left {
+  background-color: rgba(0, 0, 0, 0.555);
+  border: rgb(111, 234, 250) solid 1px;
+  border-radius: 50px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50%;
+  padding: 10px;
+}
+
+.box img {
+  width: 32vw;
+  border-radius: 50px;
+  align-self: center;
+}
+
+.box-left img {
+  width: 30vw;
+  border-radius: 50px;
+  align-self: center;
+}
+
+table {
+  display: flex;
+  text-align: center;
+  font-size: large;
+  border: solid 1px;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  border: solid 1px;
+  border-collapse: collapse;
+  padding: 10px;
+  align-items: center;
+  width: 600px;
+  height: 60px;
+}
+
+#icon {
+  width: 30px;
+}
+
+h1 {
+  padding: 10px;
+  font-family: "Croissant One", cursive, sans-serif;
+}
+h2 {
+  padding: 10px;
+  font-family: "Croissant One", cursive, sans-serif;
+  color: black;
+}
+p {
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Croissant One", cursive, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(131, 111, 243);
+  transition: 0.5s;
+  font-family: "Croissant One", cursive, sans-serif;
+}
+
+a:hover {
+  color: brown;
+}
+
+.card {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px 0px 10px;
+  margin: 10px 10px 10px 5px;
+}
+.card:hover .inner {
+  transform: perspective(900px) translateY(-10%) rotateX(20deg) translateZ(0);
+  box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 10px -8px;
+  filter: blur(0.1px);
+  transition: 0.5s;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 70%;
+}

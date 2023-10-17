@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'adventuretime';
+    src: url('fontes/Adventure\ Time\ Logo.ttf') format('truetype');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'adventuretime', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagens/paisagemadventuretime.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+align-self: flex-start;
+color: white;
+}
+
+h2{
+    padding: 20px;
+    font-size: 24px;
+    align-self: flex-start;
+    color: white;
+}
+
+p{
+    padding: 10px;
+    
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.897);
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 5px 0px;
+    text-align: center;
+}
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    
+    
+}
+
+.caixa{
+    background:linear-gradient(to right, rgba(120, 187, 81, 0.986), rgba(241, 176, 37, 0.664)) ;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.534) 10px 1px 20px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+
+
+.card-coluna > img{
+   padding: 20px;
+    
+  
+}
+
+.card{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+  
+  
+}
+
+.card-coluna{
+    display: flex;
+
+}
+
+
+
+.inner img{
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-direction: row;
+}
+
+.card:hover .inner{
+    transform: perspective(900px) translateY(-10%) rotateX(50deg) translateZ(0);
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 10px -8px;
+    filter: blur(0.1px);
+    transition: 0.5s;
+}
+
+.map{
+    width: 90em;
+    height: 30em;
+    
+
+
+}
+iframe{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.534) 10px 1px 20px 10px;
+}

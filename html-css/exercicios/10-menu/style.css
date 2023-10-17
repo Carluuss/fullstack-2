@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    
+}
+
+.menu{
+    background-color:rgb(0, 0, 0) ;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 24px;
+    box-shadow: 0px 5px 10px rgba(87, 85, 85, 0.507);
+    text-shadow: 0px 0px 5px white;
+}
+
+.options li ul{
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+    list-style: none;
+    
+}
+
+.options a:hover{
+    color: rgb(247, 244, 244);
+    transition: 0.5s;
+    text-decoration: underline;
+    box-shadow: 0px 0px 5px rgb(236, 8, 8);
+    text-shadow: 0px 0px 5px  rgb(236, 8, 8);
+}
+
+.options li:hover ul{
+    height: 170px;
+}
+
+.options li ul{
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+    list-style: none;
+}
+
+.options li:hover ul{
+    height: 170px;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+li{
+    margin: 10px ;
+    padding: 10px;
+ 
+}
+
+.home{
+ width: 73%;
+}
+
+.home a:hover{
+    color: rgb(240, 233, 237);
+    transition: 0.5s;
+    text-decoration: underline;
+    
+    box-shadow: 0px 0px 5px rgb(236, 8, 8);
+    text-shadow: 0px 0px 5px  rgb(236, 8, 8);
+}
+
+.options{
+    display: flex;
+}
