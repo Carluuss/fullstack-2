@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font: normal 18pt Arial;
+    }
+    p{
+        font-weight: bold;
+        font: normal 18pt Arial;
+    }
+    
+</style>
+<body>
+    <h1>Calculando Base do quadrado</h1>
+    Base: <input type="number" id="base">
+    Altura: <input type="number" id="altura">
+    <input type="button" value="Calcular" onclick="calcularQ()">
+    <p id="resultQ">
+
+    </p>
+
+    <h1>Juros Simples</h1>
+    Capital: <input type="number" id="capital">
+    Taxa: <input type="number" id="taxa">
+    Tempo: <input type="number" id="tempo">
+    <input type="button" value="Calcular" onclick="calcularJ()">
+    <p id="resultJ">
+
+    </p>
+    <h1>Área do trapézio</h1>
+    Base menor: <input type="number" id="baseMe">
+    Base maior: <input type="number" id="baseMa">
+    altura: <input type="number" id="h">
+    <input type="button" value="Calcular" onclick="calcularT()">
+    <p id="resultT">
+
+    </p>
+    <script>
+        function calcularQ() {
+
+            var base = document.getElementById('base').value;
+            var altura = document.getElementById('altura').value;
+            var calcQuadrado = parseFloat(base) * parseFloat(altura);
+
+            document.getElementById('resultQ').innerHTML = `A base do seu quadrado é: ${calcQuadrado}`;
+
+            return false;
+        };
+        function calcularJ() {
+            var capital = document.getElementById('capital').value;
+            var taxa = document.getElementById('taxa').value;
+            var tempo = document.getElementById('tempo').value;
+            var calcJuros = (parseFloat(capital) * parseFloat(taxa)) * parseFloat(tempo);
+            document.getElementById('resultJ').innerHTML = `O calculo do juros é ${calcJuros}`
+        }
+        function calcularT() {
+            var baseMe = document.getElementById('baseMe').value;
+            var baseMa = document.getElementById('baseMa').value;
+            var altura = document.getElementById('h').value;
+            var somaArea = (parseFloat(baseMe) + parseFloat(baseMa)) * parseFloat(altura)
+            var calcArea = somaArea/2;
+            document.getElementById('resultT').innerHTML = `O calculo da área do trapezio é: ${calcArea}`
+        }
+    </script>
+</body>
+
+</html>
