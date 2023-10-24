@@ -7,15 +7,16 @@
     <title>Document</title>
 </head>
 <style>
-    h1{
+    h1 {
         font: normal 18pt Arial;
     }
-    p{
+
+    p {
         font-weight: bold;
         font: normal 18pt Arial;
     }
-    
 </style>
+
 <body>
     <h1>Calculando Base do quadrado</h1>
     Base: <input type="number" id="base">
@@ -41,7 +42,16 @@
     <p id="resultT">
 
     </p>
+    <h1>Calculo Progressão Aritmética</h1>
+    Primeiro termo: <input type="number" id="a1">
+    Posição: <input type="number" id="n">
+    razão: <input type="number" id="r">
+    <input type="button" value="Calcular" onclick="calcularP()">
+    <p id="resultP">
+
+    </p>
     <script>
+        //Função para calcular a área de um quadrado
         function calcularQ() {
 
             var base = document.getElementById('base').value;
@@ -52,6 +62,7 @@
 
             return false;
         };
+        // Função para calcular Juros simples
         function calcularJ() {
             var capital = document.getElementById('capital').value;
             var taxa = document.getElementById('taxa').value;
@@ -59,13 +70,23 @@
             var calcJuros = (parseFloat(capital) * parseFloat(taxa)) * parseFloat(tempo);
             document.getElementById('resultJ').innerHTML = `O calculo do juros é ${calcJuros}`
         }
+        //Função para calcular área de um trapezio
         function calcularT() {
             var baseMe = document.getElementById('baseMe').value;
             var baseMa = document.getElementById('baseMa').value;
             var altura = document.getElementById('h').value;
             var somaArea = (parseFloat(baseMe) + parseFloat(baseMa)) * parseFloat(altura)
-            var calcArea = somaArea/2;
+            var calcArea = somaArea / 2;
             document.getElementById('resultT').innerHTML = `O calculo da área do trapezio é: ${calcArea}`
+        }
+        //Função para calcular progressão artmetica
+        function calcularP() {
+            var pt = document.getElementById('a1').value;
+            var posi = document.getElementById('n').value;
+            var raz = document.getElementById('r').value;
+            var calcPa = parseFloat(raz) * (parseFloat(posi) - 1);
+            var resltPa = calcPa + parseFloat(pt);
+            document.getElementById('resultP').innerHTML = `O valor da progressão aritmetica é: ${resltPa}`;
         }
     </script>
 </body>
