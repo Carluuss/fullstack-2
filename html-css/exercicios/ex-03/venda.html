@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o valor de uma venda</title>
+</head>
+<style>
+    input[type='text'] {
+        width: 15vw;
+    }
+</style>
+
+<body>
+    <h1>Calculando o valor de uma venda</h1>
+    Valor: <input type="number" id="valor"><br>
+    Escolha o método: <br>
+    À vista: <input type="radio" id="rad1" onclick="vista('rad1')" name="opcao"><br>
+    A prazo: <input type="radio" id="rad2" onclick="vista('rad2')" name="opcao"><br>
+    Valor final: <input type="text" id="reslt" disabled>
+
+    <script>
+
+        function vista(opcao) {
+            var valor = document.getElementById('valor').value;
+            var desconto = 100 * (10 / 100);
+            var valorDesconto = parseFloat(valor) - desconto;
+            if (opcao == 'rad1') {
+                if (valor != null && valor != "" && valor != 0) {
+
+                    document.getElementById('reslt').value = `O valor da venda e de: ${valorDesconto} com desconto de 10%`;
+                } else {
+                    document.getElementById('reslt').value = 'Digite um valor!!'
+                }
+            } else {
+                if (valor != null && valor != "" && valor != 0) {
+                    document.getElementById('reslt').value = `O valor da venda e de: ${valor}`;
+                } else {
+                    document.getElementById('reslt').value = 'Digite um valor!!'
+                }
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
