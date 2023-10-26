@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de úsuarios</title>
+</head>
+<style>
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: aliceblue;
+        width: 40vw;
+        padding: 10px;
+        margin-top: 10%;
+        border-radius: 50px;
+    }
+    label{
+        margin: 6px 8px;
+        padding: 5px 5px ;
+    }
+
+    input[type=text],[type=password]{
+        margin: 1px 0px 5px 5px ;
+        border-radius: 50px;
+        border: solid 1px black;
+        
+    }
+
+    input[type=button]{
+        
+        margin: 10px;
+    }
+
+    body{
+        background-color: rgb(87, 141, 241);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+</style>
+<body>
+
+    <form action="" id="cadastro">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha">
+        <label for="repetir">Repetir senha</label>
+        <input type="password" id="repetir" >
+        <input type="button" value="Cadastrar" onclick="cadastrar()">
+    </form>
+
+    <script>
+        function cadastrar(){
+            var nome = document.getElementById('nome').value;
+            var senha = document.getElementById('senha').value;
+            var repetir = document.getElementById('repetir').value;
+            if(senha == repetir){
+                alert(`Bem vindo ${nome}!`);
+            }else{
+                alert('Senha incorreta');
+            }
+        }
+    </script>
+</body>
+</html>
