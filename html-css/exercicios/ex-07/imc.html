@@ -7,12 +7,15 @@
 </head>
 <body>
     <section>
-        <label for="">Digite o peso</label>
-        <input type="text" id="peso" min="2" max="10" maxlength="4"  placeholder="Digite o peso">
-        <label for="">Digite a altura</label>
-        <input type="text" id="altura" min="2" max="10" maxlength="4" placeholder="Digite a altura">
+        <h1>Calculando IMC</h1>
+        <hr>
+        <label for="">Digite o peso:</label>
+        <input type="text" id="peso" min="2" max="10" maxlength="4"  placeholder="Digite o peso" oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*?)\..*/g, '$1');">
+        <label for="">Digite a altura:</label>
+        <input type="text" id="altura" min="2" max="10" maxlength="4" placeholder="Digite a altura" oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*?)\..*/g, '$1');">
         <input type="button" value="Calcular" onclick="Calcular()">
         <p id="rest">
+            
 
         </p>
 
