@@ -1,0 +1,8 @@
+
+section {
+    opacity: 0;
+}
+
+.currentQuest {
+    opacity: 1;
+}
