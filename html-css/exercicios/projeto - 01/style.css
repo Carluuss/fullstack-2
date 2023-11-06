@@ -6,6 +6,7 @@
     --PrimaryColor: #2060c0;
     --SecondaryColor: #67a8fc;
     --TerciariColor: #2595c9;
+    
 }
 
 
@@ -13,6 +14,7 @@
     margin: 0;
     padding: 0;
     border: border-box;
+    font-family: 'Tilt Neon', sans-serif;
 }
 
 
@@ -24,17 +26,37 @@ header nav{
     align-items: center;
 }
 
-.Menu a{
-    font-family: 'Young Serif', serif;
+.navbar {
+    background-color: var(--TerciariColor);
 }
 
-.Menu a span {
-    color: var(--SecondaryColor);
-    font-size: 2.7vw;
+.container-fluid {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.extraMenu a{
-    padding-left: 15px;
+.navbar span {
+    color: var(--PrimaryColor);
+    font-size: 1.6em;
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.8em;
+}
+
+.navbar a:hover {
+    color: var(--PrimaryColor);
+}
+
+.dropdown a {
+    color: white !important;
+}
+
+.dropdown-menu a{
+    color: black !important;
 }
 
 header nav a {
@@ -76,6 +98,7 @@ header > div > a {
     text-decoration: none;
     color: white;
     transform: .5s;
+    z-index: 999;
 }
 
 header > div > a:hover {
@@ -109,27 +132,18 @@ main{
 
 .optionsMenu .card-img-top{
     border-radius: 100%;
-    
-}
-.optionsMenu .card-img-top a {
-    overflow: hidden;
-}
-
-.optionsMenu .card-img-top a img{
-    transition: .5s;
-    
-}
-.optionsMenu .card-img-top a:hover img {
-    transform: scale(1.2);
-}
-.optionsMenu .card-title{
-    text-align: center;
-    font-size: 16px;
 }
 
 .optionsMenu img {
     width: 10em;
+    transition: .1s;
 }
+
+.optionsMenu img:hover {
+    border: 1px solid white;
+    padding: .2em;
+}
+
 
 .optionsMenu .card {
     display: flex;
@@ -137,6 +151,10 @@ main{
     align-items: center;
     background-color: transparent;
     border: none;
+}
+
+.optionsMenu h5 {
+    color: white;
 }
 
 .servicesContent {
@@ -147,7 +165,8 @@ main{
 .servicesContent h1 {
     font-weight: bold;
     border-bottom: 2px solid var(--PrimaryColor);
-    font-family: 'Young Serif', serif;
+    color: white;
+
 }
 
 .servicesContent > div {
@@ -190,7 +209,7 @@ main{
 .AnimalsContent h1 {
     font-weight: bold;
     border-bottom: 2px solid var(--PrimaryColor);
-    font-family: 'Young Serif', serif;
+    color: white;
 }
 
 .AnimalsContent a {
@@ -218,7 +237,7 @@ main{
 .aboutUs h1 {
     font-weight: bold;
     border-bottom: 2px solid var(--PrimaryColor);
-    font-family: 'Young Serif', serif;
+    color: white;
 }
 
 .aboutUs p span {

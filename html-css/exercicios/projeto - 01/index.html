@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AdoCao</title>
+  <link rel="shortcut icon" href="https://img.freepik.com/vetores-gratis/um-modelo-de-adesivo-de-personagem-de-desenho-animado-de-cachorro_1308-75254.jpg?w=740&t=st=1699276934~exp=1699277534~hmac=bd0606629695c49a70fb9ce700d88d13a25dc6709fbde747e28c6b687dc9b02e" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -21,17 +22,35 @@
 <!--CABEÇALHO-->
 
   <header>
-    <nav>
-      <div class="Menu">
-        <a href="">Ado<span>C</span>ão</a>
-      </div>
-      <div class="extraMenu">
-        <a href="">Animais</a>
-        <a href="">Serviços</a>
-        <a href="">Contato</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ado<span>C</span>ão</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Animais
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Cachorros</a></li>
+                <li><a class="dropdown-item" href="#">Gatos</a></li>
+                <li><a class="dropdown-item" href="#">Pássaros</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div>
+    <div class="titlemenu">
       <h2>Leve o amor para casa</h2>
       <a href="#AnimalsContent">Venha ver nossos bichinhos</a>
       <img src="Img/visao-dos-caes-removebg-preview.png" alt="">
@@ -49,13 +68,13 @@
         </div>
       </div>
       <div class="card" style="width: 18rem;;">
-        <a href="#AnimalsContent"><img src="Img/cao_e_gato2.jpg" class="card-img-top" alt="..."></a>
+        <a href="#AnimalsContent"><img src="https://img.freepik.com/vetores-gratis/desenho-fofo-de-gato-e-cachorro_138676-3018.jpg?w=826&t=st=1699277073~exp=1699277673~hmac=1b19fcd1114540591e3bda78293a6ec9d705f77204dff95d10f952688b0c6a24" class="card-img-top" alt="..."></a>
         <div class="card-body">
           <h5 class="card-title">Animais</h5>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <a href="#About"><img src="https://img.freepik.com/fotos-gratis/adoravel-cachorro-com-dona-na-loja-de-animais_23-2148872559.jpg?w=826&t=st=1698325643~exp=1698326243~hmac=5a5a17c6a436c4ce797ee921c0e1c34b33eda161d27846abdd893754396d66c7" class="card-img-top" alt="..."></a>
+        <a href="#About"><img src="https://img.freepik.com/vetores-gratis/desenhado-a-mao-loja-de-animal-de-estimacao-bonito_23-2147571361.jpg?w=826&t=st=1699277132~exp=1699277732~hmac=8682d4f8a940abc305ae6561d32045f8481f7ac321e3656518b62bbc4e6bb980" class="card-img-top" alt="..."></a>
         <div class="card-body">
           <h5 class="card-title">Sobre nós</h5>
         </div>
@@ -79,7 +98,7 @@
           <a href=""><img class="card-img-top" src="https://petspa.vet.br/wp-content/uploads/2021/05/Atualizacoes-sobre-tosa-e-estetica-animal-devem-ser-acompanhadas-para-manter-a-satisfacao-do-cliente.jpg" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-title">tosa</h5>
-            <p class="card-text">Descrição...</p>
+            <p class="card-text">Transforme a aparência do seu pet com nossa tosa profissional. Equipe dedicada, cuidado e carinho para seu amigo peludo ainda mais encantador. Agende agora e proporcione o seu melhor para seu companheiro!</p>
           </div>
         </div>
 
@@ -87,7 +106,7 @@
           <a href=""><img class="card-img-top" src="https://t1.ea.ltmcdn.com/pt/posts/8/8/3/acessorios_para_cachorro_guia_completo_23388_600.jpg" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-title">Acessórios</h5>
-            <p class="card-text">Descrição...</p>
+            <p class="card-text">Destaque o estilo do seu pet com nossa coleção exclusiva de acessórios. De coleiras a bandanas, oferecemos opções que combinam com sua personalidade única do seu amigo de quatro patas. Dê um toque especial ao visual dele - descubra nossos acessórios hoje!</p>
           </div>
         </div>
 
@@ -95,7 +114,7 @@
           <a href=""><img class="card-img-top" src="https://a-static.mlcdn.com.br/450x450/kit-3-brinquedos-diversos-interativo-mordedor-para-pet-cachorro-seven-pet/variutil/p10154/42330c8f5eaee444899057a1c7fee470.jpg" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-title">Brinquedos</h5>
-            <p class="card-text">Descrição...</p>
+            <p class="card-text">Proporcione momentos de alegria e diversão para seu pet com nossa seleção de brinquedos especialmente pensados para eles. De pelúcias interativas a itens resistentes para mastigar, garantimos horas de entretenimento saudável. Descubra os brinquedos perfeitos para manter a felicidade do seu amigo em alta!</p>
           </div>
         </div>
 
@@ -103,7 +122,7 @@
           <a href=""><img class="card-img-top" src="https://img.freepik.com/fotos-gratis/cachorro-branco-e-marrom-faminto-com-orelhas-grandes-e-olhos-castanhos-prontos-para-comer-uma-tigela-cheia-de-comida_181624-59012.jpg?w=1380&t=st=1698325262~exp=1698325862~hmac=e854f77f3bf2f6c0db5874788db5f5400fa4cccd4ca4f51ff510bddf08b5163a" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-title">Comidas</h5>
-            <p class="card-text">Descrição...</p>
+            <p class="card-text">Nutrição de alta qualidade para o seu pet está ao seu alcance! nossa variedade de alimentos balanceados atende às necessidades especificas de cada fase da vida do seu animal de estimação. Proporcione uma dieta deliciosa e saudável. Faça agora a escolha certa para o bem-estar do seu melhor amigo!</p>
           </div>
         </div>
       </div>
