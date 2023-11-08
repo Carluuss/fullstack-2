@@ -15,6 +15,16 @@
     font-family: 'Tilt Neon', sans-serif;
 }
 
+
+.backgroundImg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
 body {
 background-color: var(--SecondaryColor);
 display: flex;
@@ -23,8 +33,25 @@ align-items: center;
 height: 100vh;
 }
 
+h1 {
+    border: 1px solid var(--PrimaryColor);
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    width: 30%;
+    margin-bottom: 50px;
+    margin-left: 260px;
+    font-size: 40pt;
+    box-shadow: 1px 1px  5px black;
+    margin-bottom: 1.6em;
+}
+
+.destaque {
+    color: #2060c0;
+}
+
 fieldset {
-    width: 30vw;
+    width: 35vw;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -33,6 +60,11 @@ fieldset {
     border-radius: 50px;
     border: dashed 5px black;    
     padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+fieldset > legend {
+    z-index: 999;
 }
 
 fieldset > div {
@@ -41,18 +73,28 @@ fieldset > div {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-    margin-bottom: 1.5em;
 }
 
 fieldset > div > div {
-    height: 8em;
+    margin-bottom: 1.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 999;
 }
 
 fieldset > div > div > span {
     padding: 0em 1.2em;
+}
+
+.animaisIMG {
+    position: absolute;
+    top: 30px;
+    left: 40em;
+}
+
+.animaisIMG img {
+    height: 28em;
 }
 
 .dateContent {
@@ -80,7 +122,8 @@ label {
 
 }
 
-input[type='submit']{
+a, input[type='submit']{
+    text-decoration: none;
     width: 9em;
     text-align: center;
     font-size: 1.5vw;
@@ -88,8 +131,12 @@ input[type='submit']{
     background-color: var(--SecondaryColor);
     color: white;
     border-radius: 15px;
-    margin-bottom: 1.3em;
     cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+a {
+    padding: .65em 0;
 }
 
 legend {
@@ -99,4 +146,8 @@ legend {
     margin-left: 2.5em;
     color: white;
     padding: 0em .4em;
+}
+
+.btns {
+    margin: .8em 0;
 }
